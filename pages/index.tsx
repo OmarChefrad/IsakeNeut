@@ -8,6 +8,7 @@ import Formation from "../components/Formation"
 import Project from "../components/Project"
 import ContactMe from "../components/ContactMe"
 import { Experiences, Formations, Personal, Projects, Social } from "../typings"
+import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 // import { fetchExperiences } from "../utils/fetchExperiences"
 // import { fetchProjects } from "../utils/fetchProjects"
 // import { fetchSkills } from "../utils/fetchSkills"
@@ -35,13 +36,26 @@ export default function Home() {
           href="/favicon.ico"
         />
       </Head>
-      {/* header */}
-      {/* Hero */}
-      {/* About */}
-      {/* Experience */}
-      {/* Skills */}
-      {/* Projects */}
-      {/* Contact Me */}
+      <main>
+        <Parallax pages={4}>
+          <ParallaxLayer
+            offset={0}
+            speed={1}
+            factor={1}
+            style={{
+              backgroundImage: "url(/assets/123123e.png)",
+              backgroundSize: "cover",
+            }}>
+            <h2>Welcome to website</h2>
+          </ParallaxLayer>
+          <ParallaxLayer>
+            <h2>Hello world</h2>
+          </ParallaxLayer>
+          <ParallaxLayer>
+            <h2>sdfg</h2>
+          </ParallaxLayer>
+        </Parallax>
+      </main>
     </div>
   )
 }

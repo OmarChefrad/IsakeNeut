@@ -1,9 +1,10 @@
-import React from "react";
+import { Parallax } from "react-parallax"
+import React from "react"
 
-type Props = {};
+type Props = {}
 
 const Experience = (props: Props) => {
-  return <div>Experience</div>;
-};
+  return <div>Experience</div>
+}
 
-export default Experience;
+export default Experience

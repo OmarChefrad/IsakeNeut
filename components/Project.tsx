@@ -1,3 +1,4 @@
+import { Parallax } from "react-parallax"
 import React from "react"
 
 type Props = {}
