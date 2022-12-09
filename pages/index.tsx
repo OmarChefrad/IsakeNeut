@@ -36,12 +36,13 @@ export default function Home() {
         <link
           rel="icon"
           href="/favicon.ico"
-        />
+        />\
       </Head>
       <main>
         <Header />
-        <Experience />
-        <Parallaxs />
+        {/* <Experience />
+        <Parallaxs /> */}
+        <Formation />
       </main>
     </div>
   )

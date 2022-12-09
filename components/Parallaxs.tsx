@@ -10,54 +10,56 @@ type Props = {}
 const Parallaxs = (props: Props) => {
   return (
     <Parallax
-      pages={4}
-      className="flex flex-col items-center pl-2 ml:pl-96">
+      pages={3}
+      style={{
+        width: "100%",
+        height: "100%",
+      }}
+      className="ml-96 ml:ml-48">
       <ParallaxLayer
         offset={0}
-        speed={1}
-        factor={1}
-        style={{
-          backgroundSize: "cover",
-        }}>
+        speed={0.6}
+        factor={1}>
         <Image
           src="https://cdn.discordapp.com/attachments/961369644130766853/1050554444116406333/art12.jpeg"
           alt="cover"
-          width={1080}
-          height={1350}
-          style={{ backgroundSize: "cover" }}
+          width={750}
+          height={750}
+          style={{ backgroundSize: "contain", marginLeft: "12rem" }}
         />
+        <div className="flex flex-col pt-20 items-center text-zinc-700 w-[750px] bg-white h-[200px] ">
+          <h2>Isake</h2>
+        </div>
       </ParallaxLayer>
       <ParallaxLayer
         offset={1}
-        speed={1}
-        factor={1}
-        style={{
-          backgroundSize: "cover",
-        }}>
-        <h2>ONE NUET</h2>
+        speed={0.3}
+        factor={1}>
         <Image
-          src="https://cdn.discordapp.com/attachments/961369644130766853/1050551981414023188/art_3.jpg"
+          src="https://cdn.discordapp.com/attachments/961369644130766853/1050551982735241386/art_5.png"
           alt="cover"
-          width={1350}
-          height={1350}
+          width={750}
+          height={750}
           style={{ backgroundSize: "cover" }}
         />
+        <div className="flex flex-col pt-20 items-center text-zinc-700 w-[750px] bg-white h-[200px] ">
+          <h2>Isake</h2>
+        </div>
       </ParallaxLayer>
       <ParallaxLayer
-        offset={1}
+        offset={2}
         speed={1}
-        factor={1}
-        style={{
-          backgroundSize: "cover",
-        }}>
-        <h2>Wete</h2>
+        factor={1}>
         <Image
           src="https://cdn.discordapp.com/attachments/961369644130766853/1050552012879700119/art_10.jpg"
           alt="cover"
-          width={1080}
-          height={1350}
+          width={600}
+          height={750}
           style={{ backgroundSize: "cover" }}
         />
+        <div className="flex flex-col pt-20 items-center text-zinc-700 w-[750px] bg-white h-[200px] ">
+          <h2>Isake</h2>
+        </div>
       </ParallaxLayer>
     </Parallax>
   )
