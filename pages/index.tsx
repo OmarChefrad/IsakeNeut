@@ -19,7 +19,6 @@ export default function Home() {
           rel="icon"
           href="/favicon.ico"
         />
-        \
       </Head>
       <main>
         <Header />
