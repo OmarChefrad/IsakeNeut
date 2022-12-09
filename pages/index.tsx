@@ -2,7 +2,6 @@ import Head from "next/head"
 import Image from "next/image"
 import styles from "../styles/Home.module.css"
 import Savoir from "../components/Savoir"
-import Mom from "../components/Mom"
 import Experience from "../components/Experience"
 import Formation from "../components/Formation"
 import Project from "../components/Project"
@@ -10,6 +9,8 @@ import ContactMe from "../components/ContactMe"
 import { Experiences, Formations, Personal, Projects, Social } from "../typings"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import Header from "../components/Header"
+import Parallaxs from "../components/Parallaxs"
+import ExperienceCard from "../components/ExperienceCard"
 // import { fetchExperiences } from "../utils/fetchExperiences"
 // import { fetchProjects } from "../utils/fetchProjects"
 // import { fetchSkills } from "../utils/fetchSkills"
@@ -25,7 +26,7 @@ import Header from "../components/Header"
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
       <Head>
         <title>Isake Neut</title>
         <meta
@@ -39,7 +40,8 @@ export default function Home() {
       </Head>
       <main>
         <Header />
-        <Mom />
+        <Experience />
+        <Parallaxs />
       </main>
     </div>
   )
